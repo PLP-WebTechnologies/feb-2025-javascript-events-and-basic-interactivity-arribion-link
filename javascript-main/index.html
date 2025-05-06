@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Concepts Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>JavaScript Concepts Demonstration</h1>
+
+    <!-- Section 1: Form with Validation -->
+    <section id="form-section">
+        <h2>Simple Registration Form</h2>
+        <form id="registration-form" novalidate>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="4">
+                <span class="error-message" id="username-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                 <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8">
+                 <span class="error-message" id="password-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                 <span class="error-message" id="confirm-password-error"></span>
+            </div>
+
+            <div id="form-feedback" class="feedback-message"></div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Section 2: Interactive Elements -->
+    <section id="interactive-section">
+        <h2>Interactive Elements</h2>
+
+        <div id="color-box" class="interactive-box">
+            Hover over me or click me!
+        </div>
+
+        <div class="counter-section">
+            <p>Counter: <span id="counter-value">0</span></p>
+            <button id="increment-button">Increment</button>
+            <button id="decrement-button">Decrement</button>
+        </div>
+    </section>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
